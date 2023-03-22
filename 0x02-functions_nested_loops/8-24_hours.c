@@ -1,13 +1,15 @@
 #include "main.h"
 
 /**
- * jack_bauer - Prints every minute of the day of
- *              Jack Bauer, starting from 00:00 to 23:59.
+ * jack_bauer - Prints event in this format: HH:MM
+ *
+ *Return: the sum of two numbers.
  */
 void jack_bauer(void)
 {
-	int hour, minute;
-	for (hour = 0; hour <= 23; hour++)
+	int Hours, minutes;
+
+	for (hour = 0; hour < 23; hour++)
 	{
 	for (minute = 0; minute <= 59; minute++)
 	{
