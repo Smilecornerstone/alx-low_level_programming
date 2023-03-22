@@ -1,6 +1,5 @@
 #include <stdio.h>
 /**
- *
  * main - print a table of the first 178 fibonacci numbers.
  * Return: Absolutely zero.
  */
@@ -14,7 +13,7 @@ int main(void)
 	count = 0;
 	i = 0;
 	j = 1;
-	amount = 10000000000000000000;/*10^18*/
+	amount = 1000000000000000000;/*10^18*/
 	for (count = 1; count <= 91; count++)
 	{
 		k = i + j;
@@ -30,7 +29,7 @@ int main(void)
 	{
 		carry = (ib + jb) / amount;
 		ka = (ia + ja) + carry;
-		kb = (ib + jb ) - carry * amount;
+		kb = (ib + jb) - carry * amount;
 		ia = ja;
 		ib = jb;
 		ja = ka;
